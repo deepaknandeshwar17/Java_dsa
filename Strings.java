@@ -40,26 +40,51 @@ public class Strings {
         // System.out.println(name);
     // }
 
+
+
     // StringBuilder
+
+    // public static void main(String[] args){
+    //     StringBuilder sb = new StringBuilder("TonyStark");
+    //     System.out.println(sb);
+
+    //     // char at index
+    //     System.out.println(sb.charAt(0));
+
+    //     // set char at
+    //     sb.setCharAt(0,'p');
+    //     System.out.println(sb);
+
+    //     // inserting an item
+    //     sb.insert(3,'s');
+    //     System.out.println(sb);
+
+    //     // delete an item
+    //     sb.delete(3, 4);
+    //     System.out.println(sb);
+
+    //     sb.append('g');
+    //     System.out.println(sb);
+    // }
+
+
+    // Reverse the String
+
     public static void main(String[] args){
-        StringBuilder sb = new StringBuilder("TonyStark");
+        
+        StringBuilder sb = new StringBuilder("Tonystark");
+
+        for(int i = 0; i<sb.length()/2; i++){
+            int front = i;
+            int back = sb.length()-1-i;
+
+            char frontChar = sb.charAt(front);
+            char backChar = sb.charAt(back);
+
+            sb.setCharAt(front, backChar);
+            sb.setCharAt(back, frontChar);
+        }
         System.out.println(sb);
-
-        // char at index
-        System.out.println(sb.charAt(0));
-
-        // set char at
-        sb.setCharAt(0,'p');
-        System.out.println(sb);
-
-        // inserting an item
-        sb.insert(3,'s');
-        System.out.println(sb);
-
-        // delete an item
-        sb.delete(3, 4);
-        System.out.println(sb);
-
     }
     
 }
