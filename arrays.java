@@ -45,29 +45,32 @@ public class arrays {
      
     // 2D Array to find the element
 
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int rows = sc.nextInt();
-        int col = sc.nextInt();
+    // public static void main(String[] args){
+    //     Scanner sc = new Scanner(System.in);
+    //     int rows = sc.nextInt();
+    //     int col = sc.nextInt();
 
-        int[][] num = new int[rows][col];
+    //     int[][] num = new int[rows][col];
 
-        for(int i = 0; i<rows; i++){
-            for(int j=0; j<col; j++){
-                num[i][j]=sc.nextInt();
-            }
-        }
+    //     for(int i = 0; i<rows; i++){
+    //         for(int j=0; j<col; j++){
+    //             num[i][j]=sc.nextInt();
+    //         }
+    //     }
 
-        int n = sc.nextInt();
+    //     int n = sc.nextInt();
         
-        for(int i=0; i<rows; i++){
-            for(int j=0; j<col; j++){
-                if(num[i][j] == n){
-                    System.out.println("The number is found in: "+ i+"  "+j);
-                }
-            }
-        }
-    }
+    //     for(int i=0; i<rows; i++){
+    //         for(int j=0; j<col; j++){
+    //             if(num[i][j] == n){
+    //                 System.out.println("The number is found in: "+ i+"  "+j);
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    
 
     
 
