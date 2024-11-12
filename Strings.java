@@ -70,21 +70,44 @@ public class Strings {
 
     // Reverse the String
 
-    public static void main(String[] args){
+    // public static void main(String[] args){
         
-        StringBuilder sb = new StringBuilder("Tonystark");
+    //     StringBuilder sb = new StringBuilder("Tonystark");
 
-        for(int i = 0; i<sb.length()/2; i++){
-            int front = i;
-            int back = sb.length()-1-i;
+    //     for(int i = 0; i<sb.length()/2; i++){
+    //         int front = i;
+    //         int back = sb.length()-1-i;
 
-            char frontChar = sb.charAt(front);
-            char backChar = sb.charAt(back);
+    //         char frontChar = sb.charAt(front);
+    //         char backChar = sb.charAt(back);
 
-            sb.setCharAt(front, backChar);
-            sb.setCharAt(back, frontChar);
-        }
-        System.out.println(sb);
-    }
+    //         sb.setCharAt(front, backChar);
+    //         sb.setCharAt(back, frontChar);
+    //     }
+    //     System.out.println(sb);
+    // }
     
+
+    // bubble sort
+
+    public static void printArray(int arr[]){
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args){
+        int arr[] = {9,8,7,6,5,4,3,2,1};
+        for(int i=0; i<arr.length-1; i++){
+            for(int j=0; j<arr.length-i-1; j++){
+                if(arr[j] > arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        printArray(arr);
+    }
+
 }
